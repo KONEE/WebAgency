@@ -1,0 +1,373 @@
+@font-face {
+    font-family: 'robotoblack';
+    src: url('fonts/Roboto-Black-webfont.eot');
+    src: url('fonts/Roboto-Black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Roboto-Black-webfont.woff2') format('woff2'),
+         url('fonts/Roboto-Black-webfont.woff') format('woff'),
+         url('fonts/Roboto-Black-webfont.ttf') format('truetype'),
+         url('fonts/Roboto-Black-webfont.svg#robotoblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body{
+    
+    font-family: Arial, Impact,'robotoblack', "Arial Black",  Verdana, sans-serif;
+    color: #181818;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    
+}
+section{
+    /*height: 650px;*/
+    
+}
+h1
+{
+    text-align: center;
+    font-size: 40px;
+    
+}
+
+
+/****************Accueill********************/
+#accueil{
+    width: 100%;
+	margin: 0 auto;
+	text-align: left;
+    position: relative; /* cqf ajouter*/
+}
+header .accueil1{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    opacity: 0.9;
+    position:fixed;
+    z-index: 10;
+    width:100%;
+    background-color: white;
+    
+    top: 0;/* cqf ajouter*/
+    
+}
+.logo{
+    
+    padding: 10px 0px;
+    
+    
+}
+nav ul
+{
+    list-style-type: none;
+    display: flex; 
+    
+}
+
+nav li
+{ 
+	margin-right: 15px;
+	 
+}
+
+li a{
+    
+    font-size: 1.3em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+   
+}
+li a:hover
+{
+    border-top: 4px solid #41A1CB;
+}
+.accueil2{
+    background: url("images/slider/bg1.jpg");
+    width:100%;
+    height: 550px;
+   margin: 100px auto;
+    
+    
+}
+strong{
+    color: #41A1CB;
+    font-size: 30px;
+        
+    
+}
+.direction{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 250px;
+    width: 100%;
+    font-size: 50px;
+    /*etonner de  voir que flexbox avec autres technique*/
+    
+}
+.parti1{
+    font-size: 30px;
+    margin: 5px;
+}
+.parti2{
+    
+    margin: 8px;
+}
+.accueil2-1{
+    
+    color: white;
+    
+}
+.accueil2top{
+
+    width: 700px;
+    padding-left:200px;
+    padding-top: 200px;
+    
+}
+
+.b{
+
+    width: 120px;
+    background-color:#41A1CB;
+    font-size:20px;
+    color: white;
+    
+}
+
+/****************Nos services et Nos projets ********************/
+.wrapper{
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+}.
+deco
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+     border: 2px solid black;
+    max-width: 100%;
+  
+}
+.bordure
+{
+    border: 1px solid #E9EAE9;
+    width: 10%;
+    z-index: 1; 
+   
+}
+.fa-circle#c1
+{
+    transform:translateX(-285%);
+    color: #41A1CB;
+    border-radius: 1px solid white;
+    background-color: white;
+    padding: 0;
+    z-index: 2;
+}
+/****************Nos services et Nos projets ********************/
+
+.Nosprojet1{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+.Nosprojet2{
+    display:flex;
+   justify-content: center;
+    background-color: gainsboro;
+    width: 29%;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+.Nosprojet2 a {
+    display:flex;
+   justify-content: center;
+padding: 14px 16px;
+  text-decoration: none;
+    color: black;
+}
+
+.Nosprojet2 a:hover {
+  background-color:blue;
+  color: white;
+}
+.Nosprojet3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.Nosprojet3 figure  {
+    position: relative;
+}
+.Nosprojet3 figure div {
+    position: absolute;
+    display: none;
+    width: 100%;
+    text-align: center;
+   
+}
+.Nosprojet3 figure a:hover + div {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    margin: auto;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 50%;
+    opacity: 0.5;
+   
+}
+
+/*
+td
+{
+    position: relative;
+}
+td caption{
+    position: absolute;
+    bottom: 0;
+}*/
+
+
+/****************Nos services  ********************/
+.Nosservice1{
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    
+}
+
+.Nosservice2{
+    display:flex;
+    align-items: center;
+    align-content: space-around;
+    position:relative;
+    
+    
+}
+.ordi{
+    margin-left:0%;
+    padding:0;
+    text-align: center;
+    flex:5;
+    padding:0;
+   
+    
+}
+
+article
+{
+    flex:7;
+    display:flex;
+    flex-wrap: wrap;
+    
+    padding:0;
+    margin-bottom: 1px;
+    
+}
+article ul
+{
+    list-style-type:none;
+    padding-left:40px;
+}
+article ul li
+{
+    
+   margin-bottom: 30px;
+   
+}
+article ul li span
+{
+    font-size: 30px;
+    color: #41A1CB;
+   
+}
+
+
+
+
+/*********************contact************************************/
+
+#contact
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    position: relative;
+}
+ iframe
+{
+    display: flex;
+    width:100%;
+    z-index: 1;
+}
+.contact1
+{
+    background-color: rgba(242,242,242,0.8);
+    position:absolute;
+    top:10%;
+    right:5%;
+    width: 25%;
+    z-index: 4;
+    position:absolute;
+}
+
+.c-inputN , .c-inputE ,.c-inputS ,textarea
+{
+    width:100%;
+    margin: auto;
+    
+}
+.c-inputEnv{
+    width: 40%;
+    background-color:#41A1CB;
+}
+/**************Media querie pour ecran a moins de :1024px**********/
+@media screen and (max-width:1024px){
+    section{
+        width: auto;
+        height: auto;
+    }
+    .direction{
+        display: none;
+    }
+    .Nosservice2{
+        flex-direction: column;
+    }
+    /*.contact1
+    {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    }*/
+    
+}
+/**************Media querie pour ecran à moins de :700px**********/
+@media screen and (max-width:700px){
+   section{
+        width: auto;
+       height: auto;
+    }
+    header .accueil1 nav ul,nav ul
+{
+   flex-direction: column; 
+}
+
+   /* .contact1
+    {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    }*/
+}
