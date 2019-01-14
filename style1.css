@@ -9,10 +9,7 @@
     font-weight: normal;
     font-style: normal;
     
-@font-face {
-	font-family: 'Roboto-Regular';
-	src: url('fonts/Roboto-Regular.ttf');
-}
+
 }
 body{
     
@@ -479,13 +476,7 @@ textarea{
 }
 /**************Media querie pour ecran a moins de :1024px**********/
 @media screen and (max-width:1024px){
-    section{
-        width: auto;
-        height: auto;
-    }
-    .direction{
-        display: none;
-    }
+   
     .Nosservice2{
         flex-direction: column;
     }
@@ -494,11 +485,8 @@ textarea{
 }
 /**************Media querie pour ecran à moins de :700px**********/
 @media screen and (max-width:700px){
-   section{
-        width: auto;
-       height: auto;
-    }
-    header .accueil1 nav ul,nav ul
+   
+    header  nav ul
 {
    flex-direction: column; 
 }
@@ -508,11 +496,8 @@ textarea{
 
 /**************Media querie pour ecran à moins de :400px**********/
 @media screen and (max-width:400px){
-   section{
-        width: auto;
-       height: auto;
-    }
-    header .accueil1 nav ul,nav ul
+   
+    header .accueil1 nav ul
 {
    flex-direction: column; 
 }
