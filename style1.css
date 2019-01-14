@@ -44,7 +44,8 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: baseline;
-    width: 100%;   
+    width: 100%;  
+	opacity: 0.5;
 }
 
 header ul {
