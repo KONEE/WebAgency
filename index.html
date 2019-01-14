@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="fr">
 
     <head>
 
@@ -16,52 +16,57 @@
 
     <body>
         <!--********************************************************!-->
-        <div id="accueil">
-           <header>
-                <div class="accueil1">
-                    <div class="logo">
-                        <img src="images/logo.png" alt="logo">
-                    </div>
-               
-                    <nav>
-                        <ul>
-                            <li><a href="#accueil">Accueil</a></li>
-                            <li><a href="#Nosservice">Services</a></li>
-                            <li><a href="#Nosprojet">Portfolio</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </nav>
-                 </div>
-            </header>
-            <div class="accueil2">
-                
-                <div class="direction">
-                                <i class="fas fa-chevron-circle-left"></i>
-                                <i class="fas fa-chevron-circle-right"></i>
-                            </div>
-                <div class="accueil2top">
-                        <div class="accueil2-1">
-                            <div class="parti1">
-                                <strong> WEBAGENCY </strong> 
-                                :L'AGENCE DE TOUS VOS PROJETS!
-                            </div>
-                            
-                            <div class="parti2">
-                                Vous avez une projet web ? La webAgency voous aide à le réaliser <br>
-                            </div>
+        <section id = accuiel>  
+            <header>
+                <div id="logoWebagency">
+                    <a href="#slider"><img src="images/logo.png" alt="logoWebagency"></a>
+                </div>
+                <nav>
+
+                    <ul>
+                        <li><a href="#slider">Accueil</a></li>
+                        <li><a href="#Nosservice">Services</a></li>
+                        <li><a href="#Nosprojet">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+               </header>
+
+               <div id="slider">
+                <div id="slider1" class="slide">
+                    <div class="marge"></div>
+                    <div class="contenuSlide">
+                        <nav>
+                            <a class="prec" href="#slider2"><i class="fas fa-chevron-left"></i></a>
+                            <a class="suiv" href="#slider2"><i class="fas fa-chevron-right"></i></a>
+                        </nav>
+                        <div class="textSlide">
+                            <h1><span>WEBAGENCY</span> : L'AGENCE DE TOUS VOS PROJETS !</h1>
+                            <p>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</p>
+                            <p><a href="https://www.google.com/">Plus d'infos</a></p>
                         </div>
-                            <div class="accueil2-3"> 
-                              <input class="b" type=button  value="Plus d'infos"/>
-                                <!-- <a href="#" class="bouton_rouge">Plus d'infos <img src="images/flecheblanchedroite.png" alt="" /></a> !-->
-                            </div>
                     </div>
-            </div>
-                   
-            
-        </div>
+                </div>
+                <div id="slider2" class="slide">
+                    <div class="marge"></div>
+                    <div class="contenuSlide">
+                        <nav>
+                            <a class="prec" href="#slider1"><i class="fas fa-chevron-left"></i></a>
+                            <a class="suiv" href="#slider1"><i class="fas fa-chevron-right"></i></a>
+                        </nav>
+                        <div class="textSlide">
+                            <h1><span>WEBAGENCY</span> : L'AGENCE DE TOUS VOS PROJETS !</h1>
+                            <p>Découvrez ici nos services ainsi que nos dernières réalisations</p>
+                            <p><a href="https://www.google.com">Plus d'infos</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+
+        </section>
        <!--********************************************************!--> 
         <section id="Nosservice" class="wrapper">
-           
+           <div class="marge"></div>
                 <h1>NOS SERVICES </h1>
                <div class="deco">
                      <hr/>
@@ -123,6 +128,7 @@
         <!--********************************************************!-->
         
         <section id="Nosprojet" class="wrapper">
+            <div class="marge"></div>
             <div>
                 <h1>NOS PROJETS </h1>
                 <div class="deco">
@@ -132,7 +138,7 @@
                 </div> 
                 </div><!--.deco--> 
                 <div class="Nosprojet1">
-                    Notre agence MOTION4EVER vous accompagne dans la réalisation de votre projet de création de site e-commerce, sur les solutions open-source MAGENTO, SYMFONY & PRESTASHOP. Une équipe d’experts dédiés au conseil, à la stratégie et au développement de votre projet se
+                    Notre agence WebAgency vous accompagne dans la réalisation de votre projet de création de site e-commerce, sur les solutions open-source MAGENTO, SYMFONY & PRESTASHOP. Une équipe d’experts dédiés au conseil, à la stratégie et au développement de votre projet se
                 
                 </div>
               
@@ -157,69 +163,89 @@
                     </div>
                       
                 </div>
-                <div class="Nosprojet3">
-                    
-                      <figure>
-                          
-                          <a href ="images/portfolio/01.jpg"><img src="images/portfolio/Webp.net-resizeimage.jpg" alt="portfolio"></a>
-                            <div>Passagers du vol 377
-                                <div class="eye"><i class="far fa-eye"></i></div>
+                <div class="AlbumImages">
+                    <figure>
+                        <img src="images/portfolio/01.jpg" alt="projet_Creative_item1">
+                        <figcaption >
+                            <p>Item Portfolio1</p>
+                            <div>
+                                <i class="far fa-eye"></i>
                             </div>
+                        </figcaption>
                     </figure>
-                        <figure>
-                            <a href ="images/portfolio/02.jpg"><img src="images/portfolio/Webp.net-resizeimage1.jpg" alt="portfolio"></a>
-                            <div>Passagers du vol 377<i class="far fa-eye"></i></div>
-                        </figure>
-                        <figure>
-                            
-                            <a href ="images/portfolio/03.jpg"><img src="images/portfolio/Webp.net-resizeimage2.jpg" alt="portfolio"></a>
-                            <div>Passagers du vol 377<i class="fas fa-coffee"></i></div>
-                        </figure>
-                        <figure>
-                        
-                            <a href ="images/portfolio/04.jpg"><img src="images/portfolio/Webp.net-resizeimage3.jpg" alt="portfolio"></a>
-                            <div>Passagers du vol 377<i class="fas fa-coffee"></i></div>
-                        </figure>
-                        
-                    
-                        <figure>
-                            
-                            <a href ="images/portfolio/05.jpg"><img src="images/portfolio/Webp.net-resizeimage4.jpg" alt="portfolio"></a>
-                            <div>Passagers du vol 377<i class="fas fa-coffee"></i></div>
-                        </figure>
-                        <figure>
-                            
-                            <a href ="images/portfolio/06.jpg"><img src="images/portfolio/Webp.net-resizeimage5.jpg" alt="portfolio"></a>
-                            <div>Passagers du vol 377<i class="fas fa-coffee"></i></div>
-                        </figure>
-                        <figure>
-                            
-                            <a href ="images/portfolio/07.jpg"><img src="images/portfolio/Webp.net-resizeimage6.jpg" alt="portfolio"></a>
-                            <div>Passagers du vol 377<i class="fas fa-coffee"></i></div>
-                        </figure>
-                        <figure>
-                            
-                            <a href ="images/portfolio/08.jpg"><img src="images/portfolio/Webp.net-resizeimage7.jpg" alt="portfolio"></a>
-                            <div>Passagers du vol 377<i class="fas fa-coffee"></i></div>
-                        </figure>
-                    
-                    
-                     
-                     <!-- 
-                       
-                        
-                         
-                          
-                           
-                            <img src="images/portfolio/full.jpg"> !-->
+                    <figure>
+                        <img src="images/portfolio/02.jpg" alt="projet_Creative_item2">
+                        <figcaption  >
+                            <p>Item Portfolio2</p>
+                            <div>
+                                <i class="far fa-eye"></i>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/portfolio/03.jpg" alt="projet_Creative_item3">
+                        <figcaption  >
+                            <p>Item Portfolio3</p>
+                            <div>
+                                <i class="far fa-eye"></i>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/portfolio/04.jpg" alt="projet_Corporate_item1">
+                        <figcaption  >
+                            <p>Item Portfolio4</p>
+                            <div>
+                                <i class="far fa-eye"></i>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/portfolio/05.jpg" alt="projet_Corporate_item2">
+                        <figcaption  >
+                            <p>Item Portfolio5</p>
+                            <div>
+                                <i class="far fa-eye"></i>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/portfolio/06.jpg" alt="projet_Portfolio_item1">
+                        <figcaption  >
+                            <p>Item Portfolio6</p>
+                            <div>
+                                <i class="far fa-eye"></i>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/portfolio/07.jpg" alt="projet_Portfolio_item2">
+                        <figcaption  >
+                            <p>Item Portfolio7</p>
+                            <div>
+                                <i class="far fa-eye"></i>
+                            </div>
+                        </figcaption>
+                    </figure>
+                   <figure>
+                        <img src="images/portfolio/08.jpg" alt="projet_Portfolio_item3">
+                        <figcaption  >
+                            <p>Item Portfolio8</p>
+                            <div>
+                                <i class="far fa-eye"></i>
+                            </div>
+                        </figcaption>
+                    </figure>
                 </div>
+
+
+                
             </div>
-           
 
         </section>
         <!--********************************************************!-->
         <section id="contact">
-            
+            <div class="marge"></div>
                <iframe src="https://www.google.com/maps/d/embed?mid=1sHPNgPh1rCLpnkvC7GDWExc-W7M" width="640" height="2000"></iframe>
                 
             
@@ -230,10 +256,11 @@
                         <b>WebAgency SAS</b> <br>
                         25 Rue d'Hauteville 75010 Paris <br>
                         Tel: 01 02 03 04 05 <br>
+                        <div class="espace"></div>
                     </div> <!-- balise <p></p> plus eficace d'apres cour!--> 
                         <form method="post" action="traitement.php">
 
-                               <fieldset>
+                               
 
                                    <input class="c-inputN" type="text"  placeholder="Nom" /><br><br>
 
@@ -243,7 +270,7 @@
                                     <textarea  placeholder="Message"></textarea><br><br>
                                     <input class="c-inputEnv" type="submit" value="Envoyer">
 
-                               </fieldset>
+                               
                         </form>
                  </div>
         

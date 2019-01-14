@@ -8,137 +8,163 @@
          url('fonts/Roboto-Black-webfont.svg#robotoblack') format('svg');
     font-weight: normal;
     font-style: normal;
-
+    
+@font-face {
+	font-family: 'Roboto-Regular';
+	src: url('fonts/Roboto-Regular.ttf');
+}
 }
 body{
     
-    font-family: Arial, Impact,'robotoblack', "Arial Black",  Verdana, sans-serif;
+    font-family: Arial,Impact ,'Roboto-Regular','robotoblack',  "Arial Black",  Verdana, sans-serif;
     color: #181818;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     
 }
-section{
-    /*height: 650px;*/
-    
-}
+
 h1
 {
     text-align: center;
     font-size: 40px;
     
 }
-
+.marge {
+    height: 100px;
+}
 
 /****************Accueill********************/
-#accueil{
-    width: 100%;
-	margin: 0 auto;
-	text-align: left;
-    position: relative; /* cqf ajouter*/
-}
-header .accueil1{
+
+header {
+    position: fixed;
+    z-index: 10;
+    height: 100px;
+    background-color: white;
     display: flex;
     justify-content: space-around;
     align-items: baseline;
-    opacity: 0.9;
-    position:fixed;
-    z-index: 10;
-    width:100%;
-    background-color: white;
-    
-    top: 0;/* cqf ajouter*/
-    
+    width: 100%;   
 }
-.logo{
-    
-    padding: 10px 0px;
-    
-    
-}
-nav ul
-{
+
+header ul {
     list-style-type: none;
-    display: flex; 
-    
-}
-
-nav li
-{ 
-	margin-right: 15px;
-	 
-}
-
-li a{
-    
-    font-size: 1.3em;
-    color: #181818;
-    padding-bottom: 3px;
-    text-decoration: none;
-   
-}
-li a:hover
-{
-    border-top: 4px solid #41A1CB;
-}
-.accueil2{
-    background: url("images/slider/bg1.jpg") no-repeat center;
-    background-size: auto;
-    width:100%;
-    height: 550px;
-   margin: 100px auto;
-    
-    
-}
-strong{
-    color: #41A1CB;
-    font-size: 30px;
-        
-    
-}
-.direction{
     display: flex;
-    justify-content: space-between;
-    position: absolute;
-    bottom: 250px;
+}
+
+header a {
+    padding: 0px 10px;
+    text-decoration: none;
+    color: rgb(80,80,80);
+}
+
+ul a:hover {
+	padding: 20px 10px;
+	border-top: 3px solid rgb(92,173,211);
+}
+
+
+#slider, .slide {
+    height: 650px;
+    color: white;
+    font-weight: bold;
+    overflow: hidden;
     width: 100%;
-    font-size: 50px;
-    /*border-radius: 0px 70px 70px 0px;
-	background-color: black;*/
-    color: black;
-	opacity: 0.6;
-    /*etonner de  voir que flexbox avec autres technique*/
-    
 }
-.parti1{
-    font-size: 30px;
-    margin: 5px;
+
+
+.contenuSlide {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 550px;
 }
-.parti2{
-    
-    margin: 8px;
+
+#slider1 .contenuSlide {
+    background: url('images/slider/bg1.jpg') no-repeat center;
+    background-size: cover;
 }
-.accueil2-1{
-    
+
+#slider2 .contenuSlide {
+    background: url('images/slider/bg2.jpg') no-repeat center;
+    background-size: cover;
+}
+
+/* Effet transition au changement de slide */
+#slider1 {
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#slider2 {
+    opacity: 0;
+}
+
+#slider2:target {
+    opacity: 1;
+}
+
+/* Mise en place des liens de navigation du slider */
+.slide nav a {
+    z-index: 2;
+    background: rgba(0,0,0,.4);
+    color: rgb(255,255,255);
+    text-decoration: none;
+    height: 70px;
+    width: 70px;
+    border-radius: 35px;
+    position: absolute;
+    top: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.slide nav a:hover {
+    background: rgba(0,0,0,.8);
+}
+
+.prec {
+    left: -35px;
+}
+
+.suiv {
+    right: -35px;
+}
+
+.prec i {
+    padding-left: 20px;
+}
+
+.suiv i {
+    padding-right: 20px;
+}
+
+/* Texte du slider */
+.textSlide {
+    margin: 10%;
+    max-width: 700px;
+}
+
+.textSlide h1 span {
+    color: rgb(92,173,211);
+}
+
+.textSlide p {
+     margin-bottom: 40px;
+}
+
+
+.textSlide a { 
     color: white;
-    
-}
-.accueil2top{
-
-    width: 700px;
-    padding-left:200px;
-    padding-top: 200px;
-    
-}
-
-.b{
-
-    width: 120px;
-    background-color:#41A1CB;
-    font-size:20px;
-    color: white;
-    
+    background-color: rgb(92,173,211);
+    padding: 10px 15px;
+    border-radius: 3px;
+    border-bottom: 3px solid rgb(68,148,187);
+    text-decoration: none;
 }
 
 /****************Nos services et Nos projets ********************/
@@ -174,19 +200,7 @@ i.deco-titre{
 	top: -5px;
 }
 
-.rond { /*rond decoration du text */
-	display: flex;
-	justify-content: center;
-	text-align: center;
-	position: absolute;
-	margin-left: 35px;
-	margin-top: 34px;
-	font-size: 0.7em;
-	border-radius:100%;
-	color: #1AADD6;
-	
-	
-}
+
 .bordure /*Border rond sous les titres*/
 {
 	background-color: white;
@@ -198,122 +212,11 @@ i.deco-titre{
 	font-size: 0.8em;
 }
 
-.deco-cercle /*Border decorations  
-text */
-{
-	background-color: white;
-	border: 1px solid white;
-	border-radius: 100%;
-	padding: 4px;
-	position: absolute;
-	margin-top: 34px;
-	font-size: 0.8em;
-}
-
-
-.Nosprojet1{
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    
-    
-}
-.bouton{
-	position: relative;
-    display:flex;
-	flex-direction: column;
-}
-.bouton a  {
-	
-	
-	color: #E6E1E1;
-	background-color: #E6E1E1;
-	text-decoration: none;
-}
-.Nosprojet2 
-{
-    display: flex;
-	justify-content: center;
-	margin-top: 60px;
-	padding: 0;
-}
-
-.Nosprojet2 a
-{
-	border: solid #E6E1E1;
-	font-size: 18px; 
-	text-align: center;
-	margin: auto;
-	justify-content: center;
-	align-items: center;
-	background-color: #E6E1E1;
-	color: black;
-	padding: 5px 10px 5px 10px;
-}
-
-.Nosprojet2 a:hover
-{
-	text-decoration: none;
-	display: inline-block;
-	border: 5px solid #1AADD6;
-	margin: 0;
-	background-color: #1AADD6;
-	border-collapse: collapse;
-	border-bottom: 5px solid #2D9FC4;
-	color: white;
-	padding: 5px 10px 5px 10px;
-	
-}
-.icon
-{
-	display: none;
-	position: absolute;
-    color: #E6E1E1;
-	
-}
-.bouton:hover .icon
-{
-	
-	display: flex;
-	color: #1AADD6;
-	margin-left: 30px;
-	margin-top: 2%;
-}
-
-
-.Nosprojet3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.Nosprojet3 figure  {
-    position: relative;
-}
-.Nosprojet3 figure div {
-    position: absolute;
-    display: none;
-    width: 100%;
-    text-align: center;
-   
-}
-.Nosprojet3 figure a:hover + div {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    margin: auto;
-    background-color: black;
-    color: white;
-    width: 100%;
-    height: 50%;
-    opacity: 0.5;
-   
-}
-
-
-
 
 /****************Nos services  ********************/
+#Nosservice{
+    margin-top: 100px;
+}
 .Nosservice1{
     text-align: center;
     margin-bottom: 30px;
@@ -329,6 +232,30 @@ text */
     
     
 }
+.rond { /*rond decoration du text */
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	position: absolute;
+	margin-left: 35px;
+	margin-top: 34px;
+	font-size: 0.7em;
+	border-radius:100%;
+	color: #1AADD6;
+	
+	
+}
+.deco-cercle /*Border decorations  
+text */
+{
+	background-color: white;
+	border: 1px solid white;
+	border-radius: 100%;
+	padding: 4px;
+	position: absolute;
+	margin-top: 34px;
+	font-size: 0.8em;
+}
 .ordi{
     margin-left:0%;
     padding:0;
@@ -339,18 +266,7 @@ text */
     
 }
 
-/*.Screen_right{
-	
-	display: flex;
-	flex-direction: column;
-	width: 30%;
-	height: 30%;
-	padding: 50px;
-	margin: 40px;
-	overflow: auto;
-	text-align: justify;
 
-}*/
 article ul
 {
 	list-style-type: none;
@@ -392,6 +308,128 @@ article ul
 }
 
 
+/**********************Nosprojet******/
+.Nosprojet2 
+{
+    display: flex;
+	justify-content: center;
+	margin-top: 60px;
+	padding: 0;
+}
+
+.Nosprojet2 a
+{
+	border: solid #E6E1E1;
+	font-size: 18px; 
+	text-align: center;
+	margin: auto;
+	justify-content: center;
+	align-items: center;
+	background-color: #E6E1E1;
+	color: black;
+	padding: 5px 10px 5px 10px;
+}
+
+.Nosprojet2 a:hover
+{
+	text-decoration: none;
+	display: inline-block;
+	border: 5px solid #1AADD6;
+	margin: 0;
+	background-color: #1AADD6;
+	border-collapse: collapse;
+	border-bottom: 5px solid #2D9FC4;
+	color: white;
+	padding: 5px 10px 5px 10px;
+	
+}
+
+.bouton{
+	position: relative;
+    display:flex;
+	flex-direction: column;
+}
+.bouton a  {
+	
+	color: black;
+	background-color: #E6E1E1;
+	text-decoration: none;
+}
+.icon
+{
+	display: none;
+	position: absolute;
+    color: #E6E1E1;
+	
+}
+.bouton:hover .icon
+{
+	
+	display: flex;
+	color: #1AADD6;
+	margin-left: 30px;
+	margin-top: 2%;
+}
+
+.AlbumImages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.AlbumImages figure img {
+    width: 100%;
+}
+
+.AlbumImages figure { 
+    position: relative; /* Positionnement en relaive important pour figcaption */
+    overflow: hidden; 
+    height: 175px;
+    width: 260px;
+    margin: 15px;
+    background-color: rgba(0,0,0,0);
+}
+
+/* Légende au survol */ 
+.AlbumImages figcaption { 
+    position: absolute; 
+    background: rgba(0,0,0,0.4); 
+    color: white; 
+    width: 100%;
+    padding: 0 10px;;
+    opacity: 0;
+    bottom: -30%; 
+    left: 0;
+    height: 50%;
+}
+
+figure:hover figcaption {
+    opacity: 1;
+    bottom: 0;
+}
+/*  logo oeil*/
+.AlbumImages figcaption div {
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-color: rgb(69,144,177);
+    border-radius: 50%;
+    border: 2px solid white;
+    
+    left: 70%;
+    top: -20px;
+}
+
+
+
+
+
+
 /*********************contact************************************/
 
 #contact
@@ -416,19 +454,23 @@ article ul
     position:absolute;
     top:10%;
     right:5%;
-    width: 25%;
+    width: 30%;
     z-index: 4;
     position:absolute;
+    border-radius: 3px;
 }
-
+.espace{
+    height: 15px;
+}
 .c-inputN , .c-inputE ,.c-inputS ,textarea
 {
     width:100%;
     margin: auto;
+    border-radius: 3px;
     
 }
 textarea{
-    height: 150px;
+    height: 200px;
 }
 .c-inputEnv{
     width: 40%;
@@ -446,12 +488,7 @@ textarea{
     .Nosservice2{
         flex-direction: column;
     }
-    /*.contact1
-    {
-        display: flex;
-    justify-content: center;
-    align-items: center;
-    }*/
+   
     
 }
 /**************Media querie pour ecran à moins de :700px**********/
@@ -465,10 +502,19 @@ textarea{
    flex-direction: column; 
 }
 
-   /* .contact1
-    {
-        display: flex;
-    justify-content: center;
-    align-items: center;
-    }*/
+   
+}
+
+/**************Media querie pour ecran à moins de :400px**********/
+@media screen and (max-width:400px){
+   section{
+        width: auto;
+       height: auto;
+    }
+    header .accueil1 nav ul,nav ul
+{
+   flex-direction: column; 
+}
+
+   
 }
