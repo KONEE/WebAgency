@@ -31,6 +31,7 @@ h1
     height: 100px;
 }
 
+
 /****************Accueill********************/
 
 header {
@@ -41,8 +42,8 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: baseline;
-    width: 100%;  
-	opacity: 0.5;
+    width: 100%; 
+    opacity: 0.9;
 }
 
 header ul {
@@ -147,7 +148,10 @@ ul a:hover {
     max-width: 700px;
 }
 
-.textSlide h1 span {
+.textSlide div  {
+    font-size: 30px;
+}
+.textSlide div span {
     color: rgb(92,173,211);
 }
 
@@ -373,7 +377,7 @@ article ul
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -382,7 +386,7 @@ article ul
 }
 
 .AlbumImages figure { 
-    position: relative; /* Positionnement en relaive important pour figcaption */
+    position: relative; /* Positionnement en relaive important pour figcaption(elt fils) */
     overflow: hidden; 
     height: 175px;
     width: 260px;
@@ -434,9 +438,9 @@ figure:hover figcaption {
 {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+   /* flex-wrap: wrap;
     justify-content: flex-start;
-    align-items: stretch;
+    align-items: stretch;*/
     position: relative;
 }
  iframe
@@ -454,7 +458,6 @@ figure:hover figcaption {
     right:5%;
     width: 30%;
     z-index: 4;
-    position:absolute;
     border-radius: 3px;
 }
 .espace{
@@ -476,7 +479,8 @@ textarea{
 }
 /**************Media querie pour ecran a moins de :1024px**********/
 @media screen and (max-width:1024px){
-   
+    
+    
     .Nosservice2{
         flex-direction: column;
     }
@@ -497,10 +501,10 @@ textarea{
 /**************Media querie pour ecran à moins de :400px**********/
 @media screen and (max-width:400px){
    
-    header .accueil1 nav ul
+    header nav ul
 {
    flex-direction: column; 
 }
 
-   
+    
 }
