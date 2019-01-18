@@ -537,6 +537,7 @@ textarea {
     background-color: rgba(0,0,0,.4);;
     border-radius: 5px;
     color: white;
+	padding-left: 10px;
     
     }
 ul a:hover {
