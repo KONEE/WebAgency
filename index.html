@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="style1.css" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous"/>
         <link rel="icon" href="images/ico/favicon.ico" />
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>WebAgency</title>
 
     </head>
@@ -17,8 +17,6 @@
 
     <body>
         <!--********************************************************!-->
-        
-             
             <header>
                 <div id="logoWebagency">
                     <a href="#slider"><img src="images/logo.png" alt="logoWebagency"></a>
@@ -36,7 +34,7 @@
 
                <div id="slider">
                 <div id="slider1" class="slide">
-                    <div class="marge"></div>
+                    
                     <div class="contenuSlide">
                         <nav>
                             <a class="prec" href="#slider2"><i class="fas fa-chevron-left"></i></a>
@@ -46,11 +44,16 @@
                             <div><span>WEBAGENCY</span> : L'AGENCE DE TOUS VOS  PROJETS !</div>
                             <p>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</p>
                             <p><a href="https://www.google.com/">Plus d'infos</a></p>
+                            
                         </div>
+                        <hr/>
+                    </div>
+                    <div class="piedSlide">
+                        
                     </div>
                 </div>
                 <div id="slider2" class="slide">
-                    <div class="marge"></div>
+                    
                     <div class="contenuSlide">
                         <nav>
                             <a class="prec" href="#slider1"><i class="fas fa-chevron-left"></i></a>
@@ -61,6 +64,10 @@
                             <p>Découvrez ici nos services ainsi que nos dernières réalisations</p>
                             <p><a href="https://www.google.com">Plus d'infos</a></p>
                         </div>
+                        <hr/>
+                    </div>
+                    <div class="piedSlide">
+                        
                     </div>
                 </div>
             </div>  
@@ -68,7 +75,7 @@
     
        <!--********************************************************!--> 
         <section id="Nosservice" class="wrapper">
-           <div class="marge"></div>
+           
                 <h1>NOS SERVICES </h1>
                <div class="deco">
                      <hr/>
@@ -95,7 +102,7 @@
                             </div>
                             
                         </li>
-                    <li>
+                        <li>
                          <p class="icones">
                             <i class="fa fa-cubes deco-icon1"></i><i class="fas fa-circle rond deco-cercle"></i>
                          </p>
@@ -130,7 +137,7 @@
         <!--********************************************************!-->
         
         <section id="Nosprojet" class="wrapper">
-            <div class="marge"></div>
+            
             <div>
                 <h1>NOS PROJETS </h1>
                 <div class="deco">
@@ -148,7 +155,7 @@
                      
                     <div>
                         <p class="bouton">
-						<a href="#">All Works<i class="fas fa-caret-down icon"></i></a>
+						<a href="#" class="radius1">All Works<i class="fas fa-caret-down icon"></i></a>
 						</p>
                     </div>
                     <div>
@@ -161,7 +168,7 @@
                     </div>
                     <div>
                           <p class="bouton">
-						<a href="#">Portfolio<i class="fas fa-caret-down icon"></i></a></p>
+						<a href="#"class="radius2">Portfolio<i class="fas fa-caret-down icon"></i></a></p>
                     </div>
                       
                 </div>
@@ -247,42 +254,19 @@
         </section>
         <!--********************************************************!-->
         <section id="contact">
-               <div class="marge"></div>
-               <iframe src="https://www.google.com/maps/d/embed?mid=1sHPNgPh1rCLpnkvC7GDWExc-W7M" width="640" height="650"></iframe>
-                
-            
-                <div class="contact1">
-                    
-                    <div class="cont">
-                        <h2>Contact Info</h2>
-                        <b>WebAgency SAS</b> <br>
-                        25 Rue d'Hauteville 75010 Paris <br>
-                        Tel: 01 02 03 04 05 <br>
-                        <div class="espace"></div>
-                    </div> <!-- balise <p></p> plus eficace d'apres cour!--> 
-                        <form method="post" action="traitement.php">
-
-                               
-
-                                   <input class="c-inputN" type="text"  placeholder="Nom" /><br><br>
-
-                                   <input class="c-inputE" type="email"  placeholder="Email" /><br><br>
-
-                                    <input class="c-inputS" type="text"  placeholder="Subject" /><br><br>
-                                    <textarea  placeholder="Message"></textarea><br><br>
-                                    <input class="c-inputEnv" type="submit" value="Envoyer">
-
-                               
-                        </form>
-                 </div>
-        
-        </section>
-
-        
-
-        
-
-
+        <iframe class="Maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5248.431204606119!2d2.3454415680663883!3d48.873166307519575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145cb52f15%3A0x4d3ec41b2cadff0!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1484233326288" width="600" height="450" allowfullscreen></iframe>
+        <div id="conteneur">
+             <form action="file.php">
+                <h2>Nous Contacter</h2>
+                <p><strong>WebAgency SAS</strong><br>25 rue d'Hauteville, 75010 PARIS<br>Tél : 01 02 03 04 05</p>
+                <input type="text"  placeholder="Nom"/>
+                <input type="text"  placeholder="E-mail" />
+                <input type="text"   placeholder="Sujet"/>
+                <textarea placeholder="Message"></textarea>
+                <p><a href="#" class="send" title="Envoyer">Send Message</a></p>
+            </form>  
+        </div>
+	</section>
         
     </body>
 
