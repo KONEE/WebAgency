@@ -4,8 +4,6 @@
      src:  url('fonts/Roboto-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-    
-
 }
 *{
     box-sizing: border-box;/*indique au navigateur de prendre en compte la bordure et le remplissage dans la valeur définie pour la largeur et la hauteur.*/
@@ -16,8 +14,7 @@ body{
     color: #181818;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
-    
+    overflow-x: hidden; 
 }
 
 h1
@@ -53,13 +50,10 @@ header a {
     text-decoration: none;
     color: rgb(80,80,80);
 }
-
 ul a:hover {
 	padding: 20px 10px;
 	border-top: 3px solid rgb(92,173,211);
 }
-
-
 #slider, .slide {
     height: 650px;
     color: white;
@@ -68,8 +62,6 @@ ul a:hover {
     width: 100%;
     padding-top: 100px;
 }
-
-
 .contenuSlide {
     position: relative;
     display: flex;
@@ -93,17 +85,14 @@ ul a:hover {
     height: 70px;
     opacity: 0.5;  
 }
-
 #slider1 .contenuSlide {
     background: url('images/slider/bg1.jpg') no-repeat center;
     background-size: cover;
 }
-
 #slider2 .contenuSlide {
     background: url('images/slider/bg2.jpg') no-repeat center;
     background-size: cover;
 }
-
 /* Effet transition au changement de slide */
 #slider1 {
     opacity: 1;
@@ -111,7 +100,6 @@ ul a:hover {
     left: 0;
     top: 0;
 }
-
 #slider2 {
     opacity: 0;
 }
@@ -119,7 +107,6 @@ ul a:hover {
 #slider2:target {
     opacity: 1;
 }
-
 /* Mise en place des liens de navigation du slider */
 .slide nav a {
     z-index: 2;
@@ -172,8 +159,6 @@ ul a:hover {
 .textSlide p {
      margin-bottom: 40px;
 }
-
-
 .textSlide a { 
     color: white;
     background-color: rgb(92,173,211);
@@ -263,8 +248,7 @@ i.deco-titre{
 	font-size: 0.7em;
 	border-radius:100%;
 	color: #1AADD6;
-	
-	
+		
 }
 .deco-cercle /*Border decorations  
 text */
@@ -467,11 +451,6 @@ figure:hover figcaption {
     top: -20px;
 }
 
-
-
-
-
-
 /*********************contact************************************/
 
 #contact {
@@ -549,16 +528,107 @@ textarea {
     } 
     header  nav ul
 {
-   flex-direction: column; 
+   flex-direction: column;
+   
 }
+    header  nav ul li
+{ border: solid rgba(0,0,0,.4);;
+    color: white;
+    background-color: rgba(0,0,0,.4);;
+    border-radius: 5px;
+    color: white;
     
+    }
 ul a:hover {
-	color: rgb(92,173,211);
     border-top: none;
 }
+    ul li:hover {
+	color: black;
+    background-color:#E6E1E1; 
+    border-top: none;
+        border: solid #E6E1E1;
+}
     
-   
+    
+    
+   .Nosprojet2 
+    {
+        flex-direction: column;
+        margin-top: 0;
+    }
 
+
+
+.Nosprojet2 a
+{
+	border: solid #E6E1E1;
+	font-size: 18px; 
+	text-align: center;
+	margin: auto;
+	justify-content: center;
+	align-items: center;
+	background-color: #E6E1E1;
+	color: black;
+	
+    
+}
+
+
+.Nosprojet2 a:hover
+{
+	text-decoration: none;
+	display: inline-block;
+	border: 5px solid #1AADD6;
+	margin: 0;
+	background-color: #1AADD6;
+	border-collapse: collapse;
+	border-bottom: 3px solid #2D9FC4;
+	color: white;
+	padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+	
+}
+
+.bouton{
+	position: relative;
+    display:flex;
+	flex-direction: column;
+    margin: auto;
+    width: 70%;
+    background-color: #E6E1E1;
+    border-radius: 5px;
+}
+.bouton a  {
+	
+	color: black;
+	background-color: #E6E1E1;
+	text-decoration: none;
+}
+.icon
+{
+	display: none;
+	
+}
+.bouton:hover .icon
+{
+	
+	display: none;
+}
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
  .contenuSlide {
         height: 450px; /* Slider plus petit */
     }    
@@ -569,7 +639,14 @@ ul a:hover {
         max-width: 450px;
     }
     
-.contact1
+    form {
+        margin: 0;
+        width: 80%; /*  formulaire à 80% de l'ecran en largeur  */
+    }  
+    #conteneur {
+        justify-content: center;
+    }   
+/*.contact1
 {
     display: inline-block;
     background-color: rgba(242,242,242,0.8);
@@ -580,7 +657,7 @@ ul a:hover {
     border-radius: 3px;
     padding: 15px;
 }
-    
+   */ 
      
 }
 
