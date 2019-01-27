@@ -15,6 +15,7 @@ body{
     margin: 0;
     padding: 0;
     overflow-x: hidden; 
+    width: 100%;
 }
 
 h1
@@ -171,10 +172,12 @@ ul a:hover {
 /****************Nos services et Nos projets ********************/
 .wrapper{
    
-   
     padding-top: 100px;
+    max-width: 1300px;
+    margin: auto;
    
 }
+
 .deco 
 {
 	display: flex;
@@ -200,7 +203,6 @@ i.deco-titre{
 	color: #1AADD6;	
 	top: -5px;
 }
-
 
 .bordure /*Border rond sous les titres*/
 {
@@ -234,9 +236,7 @@ i.deco-titre{
     align-items: center;
     align-content: space-around;
     position:relative;
-    margin-top: 60px;
-    
-    
+    margin-top: 60px; 
 }
 .rond { /*rond decoration du text */
 	display: flex;
@@ -247,8 +247,7 @@ i.deco-titre{
 	margin-top: 34px;
 	font-size: 0.7em;
 	border-radius:100%;
-	color: #1AADD6;
-		
+	color: #1AADD6;	
 }
 .deco-cercle /*Border decorations  
 text */
@@ -266,11 +265,8 @@ text */
     padding:0;
     text-align: center;
     flex:5;
-    padding:0;
-   
-    
+    padding:0;  
 }
-
 
 article ul
 {
@@ -537,7 +533,7 @@ textarea {
     background-color: rgba(0,0,0,.4);;
     border-radius: 5px;
     color: white;
-	padding-left: 10px;
+    padding-left: 10px;
     
     }
 ul a:hover {
@@ -548,17 +544,14 @@ ul a:hover {
     background-color:#E6E1E1; 
     border-top: none;
         border: solid #E6E1E1;
+        
 }
-    
-    
-    
+      
    .Nosprojet2 
     {
         flex-direction: column;
         margin-top: 0;
     }
-
-
 
 .Nosprojet2 a
 {
@@ -569,11 +562,8 @@ ul a:hover {
 	justify-content: center;
 	align-items: center;
 	background-color: #E6E1E1;
-	color: black;
-	
-    
+	color: black;   
 }
-
 
 .Nosprojet2 a:hover
 {
@@ -587,7 +577,6 @@ ul a:hover {
 	color: white;
 	padding: 5px 10px 5px 10px;
     border-radius: 5px;
-	
 }
 
 .bouton{
@@ -607,58 +596,37 @@ ul a:hover {
 }
 .icon
 {
-	display: none;
-	
+	display: none;	
 }
 .bouton:hover .icon
 {
 	
 	display: none;
 }
-
+  
+.contenuSlide {
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
- .contenuSlide {
-        height: 450px; /* Slider plus petit */
-    }    
-    #slider, .slide {
+    height: 450px; /* Slider plus petit */
+      
+}    
+#slider, .slide {
+        
         height: 550px; /* Slider plus petit */
-    }
-    .textSlide {
-        max-width: 450px;
-    }
+        width: 100%;
+}
+.textSlide {
+     max-width: 450px;
+ }
     
-    form {
+form {
         margin: 0;
         width: 80%; /*  formulaire à 80% de l'ecran en largeur  */
-    }  
-    #conteneur {
+ }  
+#conteneur {
+    
         justify-content: center;
     }   
-/*.contact1
-{
-    display: inline-block;
-    background-color: rgba(242,242,242,0.8);
-    position:absolute;
-    width: 80%;
-    height: 70%;
-    z-index: 4;
-    border-radius: 3px;
-    padding: 15px;
-}
-   */ 
+
      
 }
 
